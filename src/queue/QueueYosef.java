@@ -1,8 +1,6 @@
 package queue;
 //원형 큐 문제~
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 
 class CircleQueue<T> {
@@ -70,7 +68,6 @@ class CircleQueue<T> {
 		for(int i=1; i<=num; i++) { //num 횟수만큼 반복
 			now_index = (++front)%size;
 			if(isEmptyIndex(now_index)) i--;
-			//System.out.println("index: "+now_index+"값 확인");
 		}
 		
 		Object returnQ = queue[now_index];
@@ -81,7 +78,6 @@ class CircleQueue<T> {
 }
 
 public class QueueYosef {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		CircleQueue<String> queue;
