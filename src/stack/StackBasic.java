@@ -32,7 +32,7 @@ class Stack<T>{
 	int size() {return top+1;}
 	
 	int empty() {
-		if(top<0) return 1;
+		if(top<0) return 1;	//비었으면 1
 		else return 0;
 	}
 	
