@@ -1,8 +1,8 @@
 package queue;
 
 import java.io.*;
-import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
@@ -24,7 +24,6 @@ public class QueueYosef_copy {
 			StringBuilder sb = new StringBuilder();
 			sb.append("<");
 			//Deque 사용 (add, offer 차이~)
-			/*
 			Deque<Integer> queue = new ArrayDeque<Integer>();	//dequeue 선언
 			
 			for(int i=1; i<=N; i++) queue.add(i);	//추가
@@ -37,8 +36,8 @@ public class QueueYosef_copy {
 				int answer = queue.poll(); //큐 가장 앞에있는 값을 꺼내줌
 				sb.append(answer + ", ");
 			}
-			*/
 			
+			/*
 			//ArrayList<> 사용
 			ArrayList<Integer> queue = new ArrayList<Integer>();
 			for(int i=1; i<=N; i++) queue.add(i);
@@ -51,7 +50,7 @@ public class QueueYosef_copy {
 				if(kill == 0) continue; //kill 0이면 값 하나남은거
 				kill = (kill + K-1)%queue.size(); //kill할 인덱스의 규칙
 			}
-			
+			*/
 			sb.deleteCharAt(sb.length()-1);	//sb 마지막에 삽입된 ' ' 제거
 			sb.setCharAt(sb.length()-1, '>'); //sb ',' -> '>'로 변경
 			bw.write(sb.toString());
