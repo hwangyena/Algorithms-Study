@@ -19,11 +19,18 @@
 + DayOfYear.java : (연습문제 8-9) &#160;&#160; 남은 일 수 계산하기
 + YMDExample.java : (연습문제 11) &#160;&#160; 클래스 사용해서 n일후의 날짜 구하기
 
-### 3. src > stack
+### 3. src > search
++ SeqSearch.java : 선형 탐색 및 보초법
++ SeqSearchAllidx.java : (연습문제 3) &#160;&#160; 선형탐색 모든 요소 찾기
++ BinarySearch.java :  __O(logn)__ &#160;&#160; 이진탐색(while, 재귀함수로 구현)
++ BinarySearchStart.java : (연습문제 5) &#160;&#160; 이진탐색 맨 앞의 요소 찾기
+ 
+
+### 4. src > stack
 + StackBasic.java : *백준 10828* &#160; &#160;JAVA로 기본적인 스택 클래스 구현
 + StackPS.java : *백준 9021* &#160; &#160;스택을 이용한 괄호 문자열 문제
 
-### 4. src > queue
+### 5. src > queue
 + QueueBasic.java : *백준 10845* &#160; &#160; JAVA로 기본적인 큐 클래스 구현
 + QueueYosef.java : *백준 1158* &#160;&#160; 큐를 이용한 요세푸스 문제 
 + QueueYosef_copy.java : *백준 1158* &#160;&#160; 큐를 이용한 요세푸스 문제 카피 코드
