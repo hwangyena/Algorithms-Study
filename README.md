@@ -24,7 +24,8 @@
 + SeqSearchAllidx.java : (연습문제 3) &#160;&#160; 선형탐색 모든 요소 찾기
 + BinarySearch.java :  __O(logn)__ &#160;&#160; 이진탐색(while, 재귀함수로 구현)
 + BinarySearchStart.java : (연습문제 5) &#160;&#160; 이진탐색 맨 앞의 요소 찾기
- 
++ BinarySearch.java : (연습문제 6) &#160;&#160; 메서드를 사용한 이진탐색
++ PhysExamSearch.java : (연습문제7) &#160;&#160; Comparator 인터페이스를 이용한 이진탐색
 
 ### 4. src > stack
 + StackBasic.java : *백준 10828* &#160; &#160;JAVA로 기본적인 스택 클래스 구현
