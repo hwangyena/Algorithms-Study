@@ -1,6 +1,10 @@
 # Algorithm_JAVA
-## :computer: JAVA로 알고리즘 공부하기
+## :book: 참고한 서적
+<center>
+<img width="200px" height="300px" src="https://user-images.githubusercontent.com/70925962/101318552-e0f66180-38a3-11eb-8b00-161408c6925b.PNG"></img>
+</center>
 
+## :computer: JAVA로 알고리즘 공부하기
 ### 1. src > basicAlgorithm
 + MaxMin.java : (연습문제 1-3) &#160;&#160; 최댓값, 최솟값을 구하는 소스 
 + Median.java : (연습문제 5)&#160;&#160; 중앙값을 구하는 소스
