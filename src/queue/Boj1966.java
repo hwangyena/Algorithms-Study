@@ -9,8 +9,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-
-
 public class Boj1966{	
 	public static void main(String[] args) {
 		BufferedReader bf= null;
@@ -33,8 +31,7 @@ public class Boj1966{
 		
 				for(int j=0; j<N; j++) {
 					queue.add(Integer.parseInt(st.nextToken()));	//문서의 중요도
-				}						
-				int doc=M;
+				}			
 				int num_print=0;
 				
 				//queue 우선순위 정렬
@@ -48,15 +45,15 @@ public class Boj1966{
 							int toBack = queue.poll();
 							queue.add(toBack);
 							isbreak = false;
-							doc = (doc>0) ? doc-1 : doc+queue.size()-1; 
+							M = (M>0) ? M-1 : M+queue.size()-1; 
 							break;
 						}
 					}
 					if(isbreak) {			
 						queue.poll();
 						num_print+=1;
-						if(doc == 0) bw.write(num_print+"\n");
-						if(--doc==-1) break;
+						if(M == 0) bw.write(num_print+"\n");
+						if(--M==-1) break;
 						
 					}
 				}
