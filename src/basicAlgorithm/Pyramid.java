@@ -3,7 +3,7 @@ package basicAlgorithm;
 public class Pyramid {
 	static void spira(int n) {
 		for(int i=1; i<=n; i++) { //피라미드 층 수
-			for(int j=1; j<=n+i-1; j++) {
+			for(int j=1; j<n+i; j++) {
 				if(j>=(n-(i-1))) {
 					System.out.print("*");
 				}
