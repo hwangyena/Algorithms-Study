@@ -1,4 +1,4 @@
-package queue;
+package dec;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
