@@ -3,7 +3,7 @@ package recursion;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-//DP(n) = DP(n-3) + DP(n-2) + DP(n-1)
+//DP(n) = DP(n-1) + DP(n-2) + DP(n-3)
 public class Boj9095 {
 	static StringBuilder sb = new StringBuilder();
 	static 	int NUM=0;
