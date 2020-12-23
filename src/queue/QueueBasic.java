@@ -3,13 +3,13 @@ package queue;
 import java.io.*;
 import java.util.*;
 
-class Queue<T>{
+class Queue_made<T>{
 	int front;	//큐의 가장 앞에 있는 정수
 	int back;
 	int size;
 	int[] queue;
 	
-	Queue(int size){
+	Queue_made(int size){
 		front = -1;
 		back = -1;
 		this.size = size;
@@ -61,7 +61,7 @@ public class QueueBasic {
 		try {
 			bw = new BufferedWriter(new OutputStreamWriter(System.out));
 			int num = scn.nextInt();
-			Queue<Integer> queue = new Queue<Integer>(num);
+			Queue_made<Integer> queue = new Queue_made<Integer>(num);
 			
 			for(int i=0; i<num; i++) {
 				String command = scn.next();
