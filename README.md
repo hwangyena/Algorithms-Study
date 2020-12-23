@@ -29,7 +29,7 @@
 + BinarySearch.java :  __O(logn)__ &#160;&#160; 이진탐색(while, 재귀함수로 구현)
 + BinarySearchStart.java : (연습문제 5) &#160;&#160; 이진탐색 맨 앞의 요소 찾기
 + BinarySearch.java : (연습문제 6) &#160;&#160; 메서드를 사용한 이진탐색
-+ PhysExamSearch.java : (연습문제7) &#160;&#160; Comparator 인터페이스를 이용한 이진탐색
++ PhysExamSearch.java : (연습문제 7) &#160;&#160; Comparator 인터페이스를 이용한 이진탐색
 
 ### 4. src > stack
 + StackBasic.java : *백준 10828* &#160; &#160;JAVA로 기본적인 스택 클래스 구현
@@ -40,10 +40,18 @@
 + QueueBasic.java : *백준 10845* &#160; &#160; JAVA로 기본적인 큐 클래스 구현
 + QueueYosef.java : *백준 1158* &#160;&#160; 큐를 이용한 요세푸스 문제 
 + QueueYosef_copy.java : *백준 1158* &#160;&#160; 큐를 이용한 요세푸스 문제 카피 코드
-+ RingBufferQueue.java : &#160;&#160; 링 버퍼로 큐 만들기
++ RingBufferQueue.java : 링 버퍼로 큐 만들기
 + Boj1966.java : *백준 1966* &#160;&#160; 프린터 큐
 
 ### 6. src > dec
 + Boj2161.java : *백준 2161*  &#160;&#160; 카드1
 + Boj3190.java : *백준 3190*  &#160;&#160; 뱀 
 + Boj1021.java : *백준 1021*  &#160;&#160; 회전하는 큐
+
+### 7. src > recursion
++ EuclidGCD.java : (연습문제 3) &#160;&#160; 유클리드 호제법을 이용한 두 수의 최대공약수 구하기
++ RecurExample.java : 재귀함수와 비재귀적 구현
++ Hanoi.java : 하노이의 탑
++ EightLookEx.java : 8룩 문제
++ EightQueenEx.java : 8퀸 문제
++ Boj9095.java : *백준 9095*  &#160;&#160; 1,2,3 더하기 (*)
