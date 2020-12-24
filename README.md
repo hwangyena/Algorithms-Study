@@ -55,3 +55,8 @@
 + EightLookEx.java : 8룩 문제
 + EightQueenEx.java : 8퀸 문제
 + Boj9095.java : *백준 9095*  &#160;&#160; 1,2,3 더하기 (*)
+
+### 8. src > sort
++ BubbleSort_basic.java : (연습문제 1) &#160;&#160; 버블정렬
++ BubbleSort_stop.java : (연습문제 3) &#160;&#160; 버블정렬_교환 횟수가 0이면 정렬 중지
++ BubbleSort_forward.java : (연습문제 4) &#160;&#160; 버블정렬_패스 범위 제한
