@@ -3,7 +3,7 @@ package sort;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class BubbleSort_basic {
+public class BubbleSort {
 	//순서 바꾸기
 	static void swap(int[] a, int idx1, int idx2) {
 		int t = a[idx1];
