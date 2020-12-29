@@ -28,7 +28,7 @@
 + SeqSearchAllidx.java : (연습문제 3) &#160;&#160; 선형탐색 모든 요소 찾기
 + BinarySearch.java :  __O(logn)__ &#160;&#160; 이진탐색(while, 재귀함수로 구현)
 + BinarySearchStart.java : (연습문제 5) &#160;&#160; 이진탐색 맨 앞의 요소 찾기
-+ BinarySearch.java : (연습문제 6) &#160;&#160; 메서드를 사용한 이진탐색
++ BinarySearchMethod.java : (연습문제 6) &#160;&#160; 메서드를 사용한 이진탐색
 + PhysExamSearch.java : (연습문제 7) &#160;&#160; Comparator 인터페이스를 이용한 이진탐색
 
 ### 4. src > stack
@@ -57,6 +57,11 @@
 + Boj9095.java : *백준 9095*  &#160;&#160; 1,2,3 더하기 (*)
 
 ### 8. src > sort
-+ BubbleSort_basic.java : (연습문제 1) &#160;&#160; 버블정렬
++ BubbleSort.java : 버블정렬
 + BubbleSort_stop.java : (연습문제 3) &#160;&#160; 버블정렬_교환 횟수가 0이면 정렬 중지
 + BubbleSort_forward.java : (연습문제 4) &#160;&#160; 버블정렬_패스 범위 제한
+
++ SelectionSort.java : 선택정렬
+
++ InsertionSort.java : 삽입정렬
++ InsertionSort_binary.java : (연습문제 8) &#160;&#160; 이진 삽입 정렬
