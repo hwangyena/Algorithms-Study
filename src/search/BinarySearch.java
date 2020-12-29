@@ -9,16 +9,17 @@ public class BinarySearch {
 		
 		while(true) {	
 			int p = (pStart+pEnd) / 2;		//배열의 중간 인덱스		
+//			System.out.println("P : "+p);
 			
 			if(arr[p] == key) return p;	
 			if(pStart == pEnd) return -1; 
 			
-			if(arr[p] > key) {	//key가 뒤에 있음 -> 검색범위를 뒤로 좁힘		
-				System.out.println("key가 뒤에 존재");
+			if(arr[p] > key) {	//key가 앞에 있음 -> 검색범위를 앞으로 좁힘		
+				System.out.println("key가 앞에 존재");
 				pEnd = p-1;
 			}
-			else { 	//key가 앞에 있음 -> 검색범위를 앞으로 좁힘
-				System.out.println("key가 앞에 존재");
+			else { 	//key가 뒤에 있음 -> 검색범위를 뒤로 좁힘
+				System.out.println("key가 뒤에 존재");
 				pStart = p+1;
 			}
 		}	
