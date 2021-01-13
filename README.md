@@ -65,3 +65,6 @@
 
 + InsertionSort.java : 삽입정렬
 + InsertionSort_binary.java : (연습문제 8) &#160;&#160; 이진 삽입 정렬
+
++ ShellSort.java : 셸 정렬
++ QuickSort.java : 퀵 정렬
