@@ -55,6 +55,7 @@
 + EightLookEx.java : 8룩 문제
 + EightQueenEx.java : 8퀸 문제
 + Boj9095.java : *백준 9095*  &#160;&#160; 1,2,3 더하기 (*)
++ Boj1759.java : *백준 1759* 
 
 ### 8. src > sort
 + BubbleSort.java : 버블정렬
@@ -68,3 +69,6 @@
 
 + ShellSort.java : 셸 정렬
 + QuickSort.java : 퀵 정렬
+
++ MergeSort.java : 병합 정렬
++ MergeSort_leftcopy.java : 병합정렬 또다른 방법 _ left 복사하기
