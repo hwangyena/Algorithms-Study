@@ -55,7 +55,7 @@
 + EightLookEx.java : 8룩 문제
 + EightQueenEx.java : 8퀸 문제
 + Boj9095.java : *백준 9095*  &#160;&#160; 1,2,3 더하기 (*)
-+ Boj1759.java : *백준 1759* 
++ Boj1759.java : *백준 1759*  &#160;&#160; 암호만들기 (백트래킹)
 
 ### 8. src > sort
 + BubbleSort.java : 버블정렬
