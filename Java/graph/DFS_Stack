@@ -1,0 +1,32 @@
+package graph;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Stack;
+
+public class Dfs_Stack {
+	static int V = 100;
+	static LinkedList<Integer> adj[];
+	
+	public void DFS(int start) {
+		boolean[] visited = new boolean[V];
+		Stack<Integer> stack = new Stack<>();
+		stack.push(start);
+		
+		while(!stack.isEmpty()) {
+			int v= stack.pop();
+			if(!visited[v]) {
+				//현재 노드 방문
+				visited[v] = true;
+				Iterator<Integer> iter = adj[v].listIterator();
+				
+				while(iter.hasNext()) {
+					//인접 & 방문X 노드 push
+					int n = iter.next();
+					if(!visited[n])
+						stack.push(n);
+				}
+			}
+		}
+	}
+}
