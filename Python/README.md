@@ -3,14 +3,14 @@
 Boj 참고 여러 알고리즘 문제 풀이 업로드 예정
 
 
-## :bookmark: python 기본 개념 정리
+## :page_facing_up: python 기본 개념 정리
 ### 참고 서적 및 페이지 
-https://nadocoding.tistory.com/5?category=902275         
-[나도코딩] 님의 블로그 글 참고   
+https://nadocoding.tistory.com/5?category=902275  [나도코딩] 님의 블로그 글 참고   
+
 <br>
-https://wikidocs.net/5
-[점프 투 파이썬] 서적 글 참고
+https://wikidocs.net/5  [점프 투 파이썬] 서적 글 참고
+
 
 ### basic 
-+ 1_datatype.py 자료형
-+ 2_
++ 1_datatype_concept.py 자료형 개념 정리 파일
++ 1_datatype_que.py 자료형 문제 정리 파일
