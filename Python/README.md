@@ -9,7 +9,7 @@ https://nadocoding.tistory.com/5?category=902275  [나도코딩] 님의 블로�
 https://wikidocs.net/5  [점프 투 파이썬] 서적 글 참고
 
 ### :paperclip: 내가 정리한 notion 노트
-https://www.notion.so/Python-5ae7152f3ecc4c5aae8fead7fd579ca5 
+https://www.notion.so/Python-5ae7152f3ecc4c5aae8fead7fd579ca5
 
 ### basic 
 + 1_datatype_concept.py 자료형 개념 정리 파일
