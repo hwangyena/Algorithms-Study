@@ -8,7 +8,12 @@ Boj 참고 여러 알고리즘 문제 풀이 업로드 예정
 https://nadocoding.tistory.com/5?category=902275  [나도코딩] 님의 블로그 글 참고   
 https://wikidocs.net/5  [점프 투 파이썬] 서적 글 참고
 
+### :paperclip: 내가 정리한 notion 노트
+https://www.notion.so/Python-5ae7152f3ecc4c5aae8fead7fd579ca5 
 
 ### basic 
 + 1_datatype_concept.py 자료형 개념 정리 파일
 + 1_datatype_que.py 자료형 문제 정리 파일
+
++ 2_if_iterator_concept.py if, while, for 제어문 개념 정리 파일
++ 2_if_iterator_que.py if, while, for 제어문 문제 정리 파일
