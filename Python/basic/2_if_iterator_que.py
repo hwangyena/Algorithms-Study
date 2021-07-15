@@ -88,6 +88,37 @@ else:
     print(f'당신은 {phone} 사용자입니다.')
 '''
 
+'''
+//문자
+주민등록번호의 뒷 자리 7자리 중 두번째와 세번째는 지역코드를 의미한다. 주민 등록 번호를 입력 받은 후 출생지가 서울인지 아닌지 판단하는 코드를 작성하라.
+
+00~08 : 서울
+09~12 : 부산
+
+//입력
+주민등록번호: 821010-1635210
+//출력
+서울이 아닙니다.
+
+//입력
+주민등록번호: 861010-1015210
+//출력
+서울 입니다.
+
+registrationNum = int(input("주민등록번호: ")[-6:-4])
+if(registrationNum>=0 and registrationNum<=8):
+    print("서울 입니다.")
+else:
+    print("서울이 아닙니다.")
+
+'''
+
+
+
+
+
+
+
 ######## while ########
 '''
 //문제
@@ -124,6 +155,95 @@ print(sum)
 
 
 ######## for ########
+'''
+//문제
+문자열 4개를 입력받고 사용자에게 숫자 하나를 추가로 입력받아,
+해당 숫자보다 길이가 짧은 문자열만 출력하는 프로그램을 작성하시오.
+
+//입력
+dog duck rabbit quokka
+5
+//출력
+dog duck
+
+animal = input().split()
+length = int(input())
+for a in animal: 
+    if(length>len(a)): print(a, end=" ")
+'''
+
+'''
+//문제
+공백을 두고 입력된 숫자들을 거꾸로 출력하는 프로그램을 작성하시오.
+
+//입력
+5 3 1 6 7 8 
+//출력
+8 7 6 1 3 5
+
+li = list(map(int, input().split()))
+li.reverse()
+for i in li: print(i, end=" ")
+
+#또는
+
+li = list(map(int, input().split()))
+for i in li[::-1]: print(i, end=" ")
+
+'''
+
+'''
+//문제
+문자를 입력받아 대문자, 소문자를 따로 화면에 출력하시오.
+
+//입력
+A b C d
+//출력
+대문자: A C
+소문자: b d
+
+word = input().split()
+up = []; lo = []
+
+for w in word:
+    if(w.isupper()): up.append(w)
+    else: lo.append(w)
+print("대문자: ",end="") 
+for u in up: print(u, end=" ") 
+print("\n소문자: ",end="")
+for l in lo: print(l, end=" ")
+'''
+
+
+'''
+//문제
+파일 이름이 순서대로 입력되면 확장자를 확인해 확장자가 .py나 .c인 파일 이름만 출력하는 프로그램을 작성하시오.
+
+//입력
+hello.py ex.h coding.py world.c
+//출력
+hello coding world
+
+'''
+
+
+'''
+//문제
+총 4개의 정수를 입력받아 음수를 출력하는 프로그램을 작성하시오.
+
+//입력
+3 -20 -3 44
+//출력
+-20
+-3
+
+
+num = list(map(int, input().split()))
+for i in num:
+    if(i<0): print(i)
+
+'''
+
 
 ''''
 //문제
@@ -182,7 +302,8 @@ for i in range(min(int(a),int(b)), max(int(a),int(b))+1):
 
 '''
 //문제
-이름 여러개를 입력받아 이름의 길이를 반환하는 프로그램을 작성하시오
+이름 여러개를 입력받아 이름의 길이를 반환하는 프로그램을 작성하시오.
+단 리스트 내포를 사용하시오.
 
 //입력
 Kathy Bob John 
@@ -192,6 +313,62 @@ Kathy Bob John
 name = input().split()
 s = [len(i) for i in name]
 for num in s: print(num,end=" ")
+'''
+
+'''
+//문제
+문자열이 공백을 두고 순서대로 3개가 입력되면 문자의 첫 글자를 대문자로 바꾸는 프로그램을 작성하시오
+
+//입력
+ulsan coding academy
+//출력
+Ulsan Coding Academy
+
+
+word = input().split()
+
+newWord = [i[0].upper()+i[1:] for i in word]
+for w in newWord: print(w, end=" ")
+
+'''
+
+
+
+############# 심화 ###################
+'''
+ 
+//문제
+주민등록번호는 13자리로 구성되는데 마지막 자리수는 유효성을 체크하는데 사용된다. 먼저 앞에서부터 12자리의 숫자에 2,3,4,5,6,7,8,9,2,3,4,5를 차례로 곱한 뒤 그 값을 전부 더한다.
+연산 결과 값을 11로 나누면 나머지가 나오는데 11에서 나머지를 뺀 값이 주민등록 번호의 마지막 번호가 된다.
+
+   8 2 1 0 1 0 - 1 6 3 5 2 1 0
+X 2 3 4 5 6 7   8 9 2 3 4 5 
+—————————————-
+1차 계산: (8*2 + 2*3 + 1*4 + 0*5 + ... + 1*5) = (128 % 11) = 7
+2차 계산: 11-7 = 4
+
+821010-1635210에 대해 계산을 해보면 마지막 번호는 4가 되어야하므로 해당 주민등록번호는 유효하지않은 주민등록번호임을 알 수 있다.
+
+사용자에게 주민등록번호를 입력받은 후 유효한지 검사하는 프로그램을 작성하시오.
+
+//입력
+주민등록번호: 821010-1635214
+//출력
+유효하지않은 주민등록번호입니다.
+
+regNum = input("주민등록번호: ")
+i=0; sum=0
+li = [2,3,4,5,6,7,8,9,2,3,4,5]
+
+for n in regNum[:len(regNum)-1]:
+
+    if(n=='-'): continue
+    sum += li[i] * int(n)
+    i+=1
+result = 11-(sum%11)
+
+if(result==int(regNum[-1:])): print("유효한 주민등록번호입니다.")
+else: print("유효하지않은 주민등록번호입니다.")
 '''
 
 
