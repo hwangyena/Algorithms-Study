@@ -14,3 +14,8 @@ https://wikidocs.net/5  [점프 투 파이썬] 서적 글 참고
 
 + 2_if_iterator_concept.py if, while, for 제어문 개념 정리 파일
 + 2_if_iterator_que.py if, while, for 제어문 문제 정리 파일
+
++ 3_random.py 랜덤 함수 개념 정리 및 문제 파일
+
++ 4_function_concept.py 함수 개념 정리 파일
++ 4_function_que.py 함수 문제 정리 파일
