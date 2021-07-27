@@ -17,7 +17,8 @@ https://wikidocs.net/5  [점프 투 파이썬] 서적 글 참고
 + 4_function_concept.py 함수 개념 정리 파일
 + 4_function_que.py 함수 문제 정리 파일
 
-### gameProject
+### :game: gameProject 
 ```나도코딩님의 파이썬 활용편 - 게임 강의 정리 파일```
 > **1_pygameinit.py** pygame 기초 강의 정리    
 > **2_gameframe.py** pygame 기본 틀    
+> **3_poopgame.py** 똥피하기 게임     
