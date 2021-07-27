@@ -28,10 +28,19 @@ to_x = 0; to_y=0
 #이동 속도
 character_speed = 0.5
 
+
+#적 캐릭터 - 화면 중앙
+enemy = pygame.image.load("D:/Algorithms/Algorithms-Study/Python/gameProject/enemy.png") #70*70
+enemy_size = enemy.get_rect().size #이미지의 크기 알아내기
+enemy_width = enemy_size[0]; enemy_height = enemy_size[1] #가로, 세로 크기
+enemy_x = (screen_width / 2)-(enemy_width/2) #캐릭터 가로 위치
+enemy_y = (screen_height / 2)-(enemy_height / 2)  #캐릭터 세로 위치
+
+
 # event loop
 running = True #게임이 진행중인지
 while running:
-    frame = clock.tick(100) #게임화면 초당 프레임 수
+    frame = clock.tick(60) #게임화면 초당 프레임 수
 
     #print("fps: "+str(clock.get_fps()))
 
@@ -55,10 +64,12 @@ while running:
             elif event.key == pygame.K_UP or event.key == pygame.K_DOWN: 
                 to_y = 0
 
+    #프레임 속도에 따라 character 위치 조절
     character_x += to_x * frame
     character_y += to_y * frame
 
-    #화면밖을 벗어나지 않도록
+
+    ####화면밖을 벗어나지 않도록####
     #가로 경계 처리
     if character_x < 0:
         character_x = 0
@@ -71,9 +82,26 @@ while running:
     elif character_y > screen_height-character_height: #캐릭터는 왼쪽 상단이 위치값이므로!!
         character_y = screen_height-character_height
 
+
+    #충돌 처리를 위한 rect 정보 업데이트
+    character_rect = character.get_rect()
+    character_rect.left = character_x
+    character_rect.top = character_y
+
+    #안움직이지만 rect 정보 업데이트를 위해!
+    enemy_rect = enemy.get_rect()
+    enemy_rect.left = enemy_x
+    enemy_rect.top = enemy_y
+
+    #충돌 체크
+    if character_rect.colliderect(enemy_rect): #사각형 중심으로 충돌이 있었는지
+        print("충돌!")
+        running = False #게임 종료
+
     #screen.fill((0, 122, 122)) #RGB로 배경 채워 보여주기
     screen.blit(background, (0,0)) #(0,0) 좌표에서 배경 보여주기
     screen.blit(character, (character_x, character_y)) #캐릭터 보여주기
+    screen.blit(enemy, (enemy_x, enemy_y)) #적 보여주기
 
     pygame.display.update() #게임화면 다시 그리기
 
