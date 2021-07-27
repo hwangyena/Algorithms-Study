@@ -19,4 +19,5 @@ https://wikidocs.net/5  [점프 투 파이썬] 서적 글 참고
 
 ### gameProject
 ```나도코딩님의 파이썬 활용편 - 게임 강의 정리 파일```
-> **1_ball_shotting.py** 캐릭터가 무기로 공을 맞춰 없애는 게임 개발
+> **1_pygameinit.py** pygame 기초 강의 정리    
+> **2_gameframe.py** pygame 기본 틀    
