@@ -11,11 +11,12 @@ https://wikidocs.net/5  [점프 투 파이썬] 서적 글 참고
 ### basic 
 + 1_datatype_concept.py 자료형 개념 정리 파일
 + 1_datatype_que.py 자료형 문제 정리 파일
-
 + 2_if_iterator_concept.py if, while, for 제어문 개념 정리 파일
 + 2_if_iterator_que.py if, while, for 제어문 문제 정리 파일
-
 + 3_random.py 랜덤 함수 개념 정리 및 문제 파일
-
 + 4_function_concept.py 함수 개념 정리 파일
 + 4_function_que.py 함수 문제 정리 파일
+
+### gameProject
+```나도코딩님의 파이썬 활용편 - 게임 강의 정리 파일```
+> **1_ball_shotting.py** 캐릭터가 무기로 공을 맞춰 없애는 게임 개발
