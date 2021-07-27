@@ -13,6 +13,9 @@ pygame.display.set_caption("Game Project") #게임 명
 #FPS
 clock = pygame.time.Clock()
 
+#######################################################################
+## 사용자 게임 초기화 - 배경화면, 게임 이미지, 좌표, 속도, 폰트 등
+
 #배경 이미지 불러오기
 background = pygame.image.load("D:/Algorithms/Algorithms-Study/Python/gameProject/background.png") #480*640
 
@@ -36,6 +39,15 @@ enemy_width = enemy_size[0]; enemy_height = enemy_size[1] #가로, 세로 크기
 enemy_x = (screen_width / 2)-(enemy_width/2) #캐릭터 가로 위치
 enemy_y = (screen_height / 2)-(enemy_height / 2)  #캐릭터 세로 위치
 
+#글자 폰트 정의
+game_font = pygame.font.Font(None, 40) #폰트 객체 생성 (폰트, 크기)
+
+#게임 총 시간
+total_time = 10
+#시작 tick
+start_ticks = pygame.time.get_ticks() #시작 tick을 받아옴
+
+#######################################################################
 
 # event loop
 running = True #게임이 진행중인지
@@ -44,6 +56,7 @@ while running:
 
     #print("fps: "+str(clock.get_fps()))
 
+    ## 이벤트 처리 - 키보드, 마우스
     for event in pygame.event.get():  #이벤트가 발생했는지?
         if event.type == pygame.QUIT: #창을 닫으면(우측 상단 X버튼) 
             running = False            #종료
@@ -64,6 +77,7 @@ while running:
             elif event.key == pygame.K_UP or event.key == pygame.K_DOWN: 
                 to_y = 0
 
+    ## 위치 처리
     #프레임 속도에 따라 character 위치 조절
     character_x += to_x * frame
     character_y += to_y * frame
@@ -82,7 +96,7 @@ while running:
     elif character_y > screen_height-character_height: #캐릭터는 왼쪽 상단이 위치값이므로!!
         character_y = screen_height-character_height
 
-
+    ## 충돌 처리
     #충돌 처리를 위한 rect 정보 업데이트
     character_rect = character.get_rect()
     character_rect.left = character_x
@@ -98,12 +112,27 @@ while running:
         print("충돌!")
         running = False #게임 종료
 
+    ##화면에 그리기
     #screen.fill((0, 122, 122)) #RGB로 배경 채워 보여주기
     screen.blit(background, (0,0)) #(0,0) 좌표에서 배경 보여주기
     screen.blit(character, (character_x, character_y)) #캐릭터 보여주기
     screen.blit(enemy, (enemy_x, enemy_y)) #적 보여주기
 
+    
+    #경과 시간
+    elapsed_time = (pygame.time.get_ticks() - start_ticks)/1000 
+    #남은 시간
+    timer = game_font.render(str(int(total_time - elapsed_time)), True, (255,255,255)) 
+
+    #시간 0이하이면 게임 종료
+    if(total_time-elapsed_time<=0):
+        print("타임 아웃!")
+        running = False
+
+    screen.blit(timer, (10,10)) #화면에 넣기
     pygame.display.update() #게임화면 다시 그리기
 
+#대기
+pygame.time.delay(2000) #2초 대기(ms)
 # game 종료
 pygame.quit()
