@@ -14,3 +14,6 @@ JavaScript 마스터를 목표로 열심히 공부하기!! :sparkles:
 
 ### 2. programmers_LV02
 프로그래머스 레벨 2 JavaScript 문제 풀이
+
+### 3. programmers_weeklyChallenge
+프로그래머스 위클리 챌린지
