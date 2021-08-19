@@ -22,3 +22,7 @@ https://wikidocs.net/5  [점프 투 파이썬] 서적 글 참고
 > **1_pygameinit.py** pygame 기초 강의 정리    
 > **2_gameframe.py** pygame 기본 틀    
 > **3_poopgame.py** 똥피하기 게임     
+
+### algorithms
+```파이썬 사용 알고리즘 문제 풀이 파일```
+**hash** hash boj, programmers 문제 풀이
