@@ -1,13 +1,7 @@
 // 초당 최 처리ㅇ
-export const lines1 = [
-  "2016-09-15 01:00:04.001 2.0s",
-  "2016-09-15 01:00:07.000 2s",
-];
-export const lines2 = [
-  "2016-09-15 01:00:04.002 2.0s",
-  "2016-09-15 01:00:07.000 2s",
-];
-export const lines3 = [
+const lines1 = ["2016-09-15 01:00:04.001 2.0s", "2016-09-15 01:00:07.000 2s"];
+const lines2 = ["2016-09-15 01:00:04.002 2.0s", "2016-09-15 01:00:07.000 2s"];
+const lines3 = [
   "2016-09-15 20:59:57.421 0.351s",
   "2016-09-15 20:59:58.233 1.181s",
   "2016-09-15 20:59:58.299 0.8s",
@@ -20,12 +14,15 @@ export const lines3 = [
   "2016-09-15 21:00:02.066 2.62s",
 ];
 
-export function solution(lines) {
-  const S = lines.match(/\d{2}:\d{2}:\d{2}.\d{3}/);
-  const T = lines.match(/\d.\d{0,3}s/);
+function solution(lines) {
+  lines.map((v) => {
+    // const S = v.match(/\d{2}:\d{2}:\d{2}.\d{3}/)[0];
+    const S = v.split(" ")[1];
+    const T = v.split(" ")[2];
 
-  console.log("S", S);
-  console.log("T", T);
+    console.log("S", S);
+    console.log("T", T);
+  });
 
   var answer = 1;
 
@@ -33,3 +30,9 @@ export function solution(lines) {
 }
 
 solution(lines1);
+
+/**
+ *
+ * 1. 각 구간의 시작마다 1초를 정한다.
+ * 2. 맵 돌면서,
+ */
