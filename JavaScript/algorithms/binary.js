@@ -11,4 +11,20 @@ const binarySearch = (arr, start, end, key) => {
   else return binarySearch(arr, start, p - 1, key);
 };
 
-console.log('binary', binarySearch(arr, 0, arr.length - 1, 26));
+console.log("binary", binarySearch(arr, 0, arr.length - 1, 26));
+
+const binarySearch2 = (arr, target) => {
+  let left = 0;
+  let right = arr.length - 1;
+  let mid = Math.floor((left + right) / 2);
+  while (left <= right) {
+    if (arr[mid] === target) return mid;
+    if (arr[mid] < target) left = mid + 1;
+    else right = mid - 1;
+
+    mid = Math.floor((left + right) / 2);
+  }
+
+  //mid가 마지막까지 비교했던 값
+  return mid + 1;
+};
