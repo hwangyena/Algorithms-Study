@@ -27,4 +27,20 @@ const getCombination = (arr, start) => {
     console.log("combi", combi);
   }
 };
-getCombination(["a", "b", "c"], 0);
+// getCombination(["a", "b", "c"], 0);
+
+/** 이차원 배열 중복제거 */
+function removeDup(arr) {
+  return [...new Set(arr.join("|").split("|"))]
+    .map((v) => v.split(","))
+    .map((v) => v.map((a) => +a));
+}
+
+console.log(
+  JSON.stringify(
+    removeDup([
+      [1, 2],
+      [1, 2],
+    ])
+  )
+);
